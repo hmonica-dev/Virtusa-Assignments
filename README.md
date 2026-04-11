@@ -50,6 +50,9 @@ java Main
 ### Return Book
 ![Return Book](return_book.png)
 
+### Fine Calculation
+![Fine](fine_calculation.png)
+
 ### Search Book
 ![Search Book](search_book.png)
 
