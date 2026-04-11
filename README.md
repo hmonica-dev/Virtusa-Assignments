@@ -39,23 +39,18 @@ java Main
 ## 🔹 Sample Output
 
 ### Add Book
-
 ![Add Book](add_book.png)
 
 ### Add User
-
 ![Add User](add_user.png)
 
 ### Issue Book
-
 ![Issue Book](issue_book.png)
 
 ### Return Book
-
 ![Return Book](return_book.png)
 
 ### Search Book
-
 ![Search Book](search_book.png)
 
 ---
