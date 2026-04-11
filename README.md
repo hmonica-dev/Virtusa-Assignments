@@ -56,6 +56,6 @@ java Main
 ### Search Book
 ![Search Book](search_book.png)
 
-## 👩‍💻 Author
+##  Author
 
 Monica H
