@@ -7,7 +7,10 @@ This is a console-based Library Management System developed using Java. It helps
 ---
 
 ## 🔹 Objective
-To automate library operations using Java and OOP concepts.
+
+To automate library operations using Java and OOP concepts..
+
+---
 
 
 ## 🔹 Features
