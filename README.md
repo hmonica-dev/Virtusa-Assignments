@@ -44,7 +44,8 @@ java Main
 ![Add User](add_user.png)
 ### Issue Book
 ![Issue Book](issue_book.png)
-### Return Book ![Return Book](return_book.png)
+### Return Book
+![Return Book](return_book.png)
 ### Fine Calculation
 ![Fine](fine_calculation.png)
 ### Search Book
