@@ -35,6 +35,11 @@ This project analyzes retail sales data using SQL queries and relational databas
 
 ---
 
+## 📁 Project Structure
+
+- retail.sql → Contains all SQL queries
+- Images → Sample outputs of queries
+
 ## 📸 Sample Output
 
 ### Tables Created
