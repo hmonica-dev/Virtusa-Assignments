@@ -43,10 +43,10 @@ This project analyzes retail sales data using SQL queries and relational databas
 ## Sample Output
 
 ### Tables Created
-![Tables](screenshots/tables.png)
+![Tables](images/tables.png)
 
 ### Sample Data
-![Customers](screenshots/customers.png)
+![Customers](images/customers.png)
 
 ---
 
