@@ -59,9 +59,9 @@ python main.py
 
 ## Sample Output
 ### Example 1:
-<img src="screenshot1.png" width="550" height="450"/>
+<img src="screenshot1.png" width="650" height="550"/>
 ### Example 2:
-<img src="screenshot2.png" width="250" height="450"/>
+<img src="screenshot2.png" width="650" height="550"/>
 
 ---
 ## Conclusion
