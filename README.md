@@ -4,13 +4,13 @@ This repository contains my projects developed as part of my learning and assign
 
 ## Projects Included
 
-### 1. Java_Library_System
+### 1. Java Library Management System
 A console-based application to manage books, users, and transactions.
 
-### 2. SQL_Retail_Project
+### 2. SQL Retail Sales Analysis
 A database project to analyze sales data using SQL queries.
 
-### 3. Python_Resume_Analyzer 
+### 3. Python Resume Analyzer & Job Matcher
 A Python tool that analyzes resumes and compares them with job descriptions.
 
 ## Technologies Used
