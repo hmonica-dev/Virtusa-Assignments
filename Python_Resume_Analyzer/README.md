@@ -60,13 +60,10 @@ python main.py
 ## Sample Output
 ### Example 1:
 ![Output 1](screenshot1.png)
-
 ### Example 2:
 ![Output 2](screenshot2.png)
 
-
 ---
-
 ## Conclusion
 This project demonstrates a basic approach to resume analysis using Python. It acts as a smart assistant that helps users improve their resumes and increases their chances of getting shortlisted. It also highlights the gap between a candidate's skills and job requirements. 
 ## Author
