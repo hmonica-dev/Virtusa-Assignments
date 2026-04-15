@@ -51,19 +51,19 @@ This project analyzes retail sales data using SQL queries and relational databas
 ---
 
 ### Top Selling Products
-![Top Selling]screenshots/top_selling.png)
+![Top Selling](images/top_selling.png)
 
 ### Most Valuable Customers
-![Customers](screenshots/valuable_customers.png)
+![Customers](images/valuable_customers.png)
 
 ### Monthly Revenue
-![Revenue](screenshots/monthly_revenue.png)
+![Revenue](images/monthly_revenue.png)
 
 ### Category-wise Sales
-![Category](screenshots/category_sales.png)
+![Category](images/category_sales.png)
 
 ### Inactive Customers
-![Inactive](screenshots/inactive_customers.png)
+![Inactive](images/inactive_customers.png)
 
-## 👩‍💻 Author
+## Author
 Monica H
