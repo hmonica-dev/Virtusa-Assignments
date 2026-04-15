@@ -68,7 +68,6 @@ python main.py
 ---
 
 ## Conclusion
-This project demonstrates a basic approach to resume analysis using Python. It acts as a smart assistant that helps users improve their resumes and increases their chances of getting shortlisted. It also highlights the gap between a candidate's skills and job requirements. The project can be further improved by using advanced NLP techniques and better skill extraction methods.
-
+This project demonstrates a basic approach to resume analysis using Python. It acts as a smart assistant that helps users improve their resumes and increases their chances of getting shortlisted. It also highlights the gap between a candidate's skills and job requirements. 
 ## Author
 Monica H
