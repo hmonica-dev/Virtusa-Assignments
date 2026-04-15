@@ -1,19 +1,19 @@
-# 📚 Library Management System (Java)
+# Library Management System (Java)
 
-## 🔹 Description
+## Description
 
 This is a console-based Library Management System developed using Java. It helps manage books, users, and transactions efficiently.
 
 ---
 
-## 🔹 Objective
+## Objective
 
 To automate library operations using Java and OOP concepts..
 
 ---
 
 
-## 🔹 Features
+## Features
 
 * Add books
 * Register users
@@ -24,7 +24,7 @@ To automate library operations using Java and OOP concepts..
 
 ---
 
-## 🔹 Technologies Used
+## Technologies Used
 
 * Java (Core Java)
 * OOP Concepts
@@ -33,7 +33,7 @@ To automate library operations using Java and OOP concepts..
 
 ---
 
-## 🔹 How to Run
+## How to Run
 
 Compile:
 javac *.java
@@ -43,7 +43,7 @@ java Main
 
 ---
 
-## 🔹 Sample Output
+## Sample Output
 
 ### Add Book
 ![Add Book](add_book.png)
