@@ -59,9 +59,9 @@ python main.py
 
 ## Sample Output
 ### Example 1:
-<img src="screenshot1.png" width="600"/>
+![Output 1](screenshot1.png)
 ### Example 2:
-<img src="screenshot2.png" width="600"/>
+![Output 2](screenshot2.png)
 
 ---
 ## Conclusion
