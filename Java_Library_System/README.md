@@ -46,22 +46,22 @@ java Main
 ## Sample Output
 
 ### Add Book
-![Add Book](add_book.png)
+![Add Book](screenshots/add_book.png)
 
 ### Add User
-![Add User](add_user.png)
+![Add User](screenshots/add_user.png)
 
 ### Issue Book
-![Issue Book](issue_book.png)
+![Issue Book](screenshots/issue_book.png)
 
 ### Return Book
-![Return Book](return_book.png)
+![Return Book](screenshots/return_book.png)
 
 ### Fine Calculation
-![Fine](fine_calculation.png)
+![Fine](screenshots/fine_calculation.png)
 
 ### Search Book
-![Search Book](search_book.png)
+![Search Book](screenshots/search_book.png)
 
 ##  Author
 
