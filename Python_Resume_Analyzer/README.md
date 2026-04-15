@@ -61,7 +61,7 @@ python main.py
 ### Example 1:
 <img src="screenshot1.png" width="600" height="400"/>
 ### Example 2:
-<img src="screenshot2.png" width="600" height="400"/>
+<img src="screenshot2.png" width="600" height="400"/> 
 
 ---
 ## Conclusion
