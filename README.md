@@ -7,7 +7,7 @@ This repository contains my projects developed as part of my learning and assign
 ### 1. Java Library Management System
 A console-based application to manage books, users, and transactions.
 
-### 2. SQL Retail Sales Analysis
+### 2. SQL Online Retail Sales Analysis Database
 A database project to analyze sales data using SQL queries.
 
 ### 3. Python Resume Analyzer & Job Matcher
