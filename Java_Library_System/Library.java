@@ -1,59 +1,131 @@
 import java.time.LocalDate;
 import java.time.temporal.ChronoUnit;
-import java.util.*;
-public class Library {
-    ArrayList<Book>books = new ArrayList<>();
-    ArrayList<User>users=new ArrayList<>();
-    ArrayList<Transaction>transactions=new ArrayList<>();
-    void addBook(int id,String title,String author){
-        Book b = new Book(id, title, author);
-        books.add(b);
-        System.out.println("Book added!");
-    }
+import java.util.ArrayList;
 
-    void addUser(int id,String name){
-        users.add(new User(id,name));
-        System.out.println("User registered!");
-    }
+public class Library {
+
+    private ArrayList<Book> books = new ArrayList<>();
+    private ArrayList<User> users = new ArrayList<>();
+    private ArrayList<Transaction> transactions = new ArrayList<>();
+
     
-    void searchBook(String keyword){
-        for (Book b: books){
-            if(b.title.contains(keyword) || b.author.contains(keyword)){
-                System.out.println("Found: " + b.title + " by "+ b.author);
-            }
+    public void addBook(int id, String title, String author) {
+    for (Book b : books) {
+        if (b.getId() == id) {
+            System.out.println("Book ID already exists!");
+            return;
         }
     }
 
-    void issueBook(int bookid,int userid){
-        for (Book b : books){
-            if(b.id==bookid && !b.isIssued){
-                b.isIssued=true;
-                transactions.add(new Transaction(bookid, userid));
+    books.add(new Book(id, title, author));
+    System.out.println("Book added!");
+}
+    public boolean bookExists(int id) {
+    for (Book b : books) {
+        if (b.getId() == id) {
+            return true;
+        }
+    }
+    return false;
+}
+
+    
+    public void addUser(int id, String name) {
+    for (User u : users) {
+        if (u.getUserId() == id) {
+            System.out.println("User ID already exists!");
+            return;
+        }
+    }
+
+    users.add(new User(id, name));
+    System.out.println("User registered!");
+}
+    public boolean userExists(int id) {
+    for (User u : users) {
+        if (u.getUserId() == id) {
+            return true;
+        }
+    }
+    return false;
+}
+
+    
+    public void searchBook(String keyword) {
+    boolean found = false;
+
+    for (Book b : books) {
+        if (b.getTitle().toLowerCase().contains(keyword.toLowerCase()) ||
+            b.getAuthor().toLowerCase().contains(keyword.toLowerCase())) {
+
+            System.out.println("Found: " + b.getTitle() + " by " + b.getAuthor());
+            found = true;
+        }
+    }
+
+    if (!found) {
+        System.out.println("No book found.");
+    }
+}
+
+   
+    public void issueBook(int bookId, int userId) {
+        for (Book b : books) {
+            if (b.getId() == bookId && !b.isIssued()) {
+                b.setIssued(true);
+                transactions.add(new Transaction(bookId, userId));
                 System.out.println("Book issued!");
                 return;
-
             }
         }
         System.out.println("Book not available.");
     }
 
-    void returnBook(int bookid){
-        for (Transaction t:transactions){
-            if(t.bookid==bookid){
+    
+    public void returnBook(int bookId) {
+        for (Transaction t : transactions) {
+            if (t.getBookId() == bookId) {
+
                 LocalDate today = LocalDate.now();
-                long latedays=ChronoUnit.DAYS.between(t.dueDate,today);
-                if(latedays>0){
-                    System.out.println("Fine: ₹" + (latedays * 10));
-                }else{
+                long lateDays = ChronoUnit.DAYS.between(t.getDueDate(), today);
+
+                if (lateDays > 0) {
+                    System.out.println("Fine: Rs. " + (lateDays * 10));
+                } else {
                     System.out.println("Returned on time!");
                 }
+
+                
                 for (Book b : books) {
-                    if (b.id == bookid) {
-                        b.isIssued = false;
+                    if (b.getId() == bookId) {
+                        b.setIssued(false);
                     }
                 }
                 return;
             }
         }
     }
+
+    public void removeBook(int bookId) {
+    for (Book b : books) {
+        if (b.getId() == bookId) {
+            books.remove(b);
+            System.out.println("Book removed successfully!");
+            return;
+        }
+    }
+    System.out.println("Book not found.");
+    }
+
+    public void updateBook(int bookId, String newTitle, String newAuthor) {
+    for (Book b : books) {
+        if (b.getId() == bookId) {
+            b.setTitle(newTitle);
+            b.setAuthor(newAuthor);
+            System.out.println("Book updated successfully!");
+            return;
+        }
+    }
+    System.out.println("Book not found.");
+}
 }

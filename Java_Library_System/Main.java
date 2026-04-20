@@ -1,57 +1,96 @@
-import java.util.*;
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
+
         Scanner sc = new Scanner(System.in);
         Library lib = new Library();
-                while (true) {
-                    System.out.println("\n1.Add Book\n2.Add User\n3.Search\n4.Issue\n5.Return\n6.Exit");
-                    int choice = sc.nextInt();
 
-                    switch (choice) {
-                        case 1:
-                            System.out.print("Enter ID: ");
-                            int id = sc.nextInt();
-                            sc.nextLine();
-                            System.out.print("Title: ");
-                            String title = sc.nextLine();
-                            System.out.print("Author: ");
-                            String author = sc.nextLine();
-                            lib.addBook(id, title, author);
-                            break;
+        while (true) {
+            System.out.println("\n1. Add Book\n2. Add User\n3. Search Book\n4. Issue Book\n5. Return Book\n6. Remove Book\n7. Update Book\n8. Exit");
+            int choice = sc.nextInt();
+            sc.nextLine(); 
 
-                        case 2:
-                        System.out.print("User ID: ");
-                        int uid = sc.nextInt();
-                        sc.nextLine();
-                        System.out.print("Name: ");
-                        String name = sc.nextLine();
-                        lib.addUser(uid, name);
-                        break;
+            switch (choice) {
 
-                        case 3:
-                        sc.nextLine();
-                        System.out.print("Search keyword: ");
-                        lib.searchBook(sc.nextLine());
-                        break;
+                case 1:
+                    System.out.print("Enter Book ID: ");
+                    int id = sc.nextInt();
+                    sc.nextLine();
+                    if (lib.bookExists(id)) {
+                    System.out.println("Book ID already exists!");
+                    break;
+                    }
+                    System.out.print("Enter Title: ");
+                    String title = sc.nextLine();
 
-                        case 4:
-                        System.out.print("Book ID: ");
-                        int bid = sc.nextInt();
-                        System.out.print("User ID: ");
-                        int uid2 = sc.nextInt();
-                        lib.issueBook(bid, uid2);
-                        break;
+                    System.out.print("Enter Author: ");
+                    String author = sc.nextLine();
 
-                        case 5:
-                        System.out.print("Book ID: ");
-                        lib.returnBook(sc.nextInt());
-                        break;
+                    lib.addBook(id, title, author);
+                    break;
 
-                        case 6:
-                        System.out.println("Exit...");
-                        return;
+                case 2:
+                    System.out.print("Enter User ID: ");
+                    int uid = sc.nextInt();
+                    sc.nextLine();
+                    if (lib.userExists(uid)) {
+                    System.out.println("User ID already exists!");
+                    break;
+                    }
+                    System.out.print("Enter Name: ");
+                    String name = sc.nextLine();
+
+                    lib.addUser(uid, name);
+                    break;
+
+                case 3:
+                    System.out.print("Enter keyword: ");
+                    String keyword = sc.nextLine();
+                    lib.searchBook(keyword);
+                    break;
+
+                case 4:
+                    System.out.print("Enter Book ID: ");
+                    int bid = sc.nextInt();
+
+                    System.out.print("Enter User ID: ");
+                    int uid2 = sc.nextInt();
+
+                    lib.issueBook(bid, uid2);
+                    break;
+
+                case 5:
+                    System.out.print("Enter Book ID: ");
+                    int returnId = sc.nextInt();
+                    lib.returnBook(returnId);
+                    break;
+
+                case 6:
+                    System.out.print("Enter Book ID to remove: ");
+                    int removeId = sc.nextInt();
+                    lib.removeBook(removeId);
+                    break;
+
+                case 7:
+                    System.out.print("Enter Book ID to update: ");
+                    int updateId = sc.nextInt();
+                    sc.nextLine();
+
+                    System.out.print("Enter new title: ");
+                    String newTitle = sc.nextLine();
+
+                    System.out.print("Enter new author: ");
+                    String newAuthor = sc.nextLine();
+
+                    lib.updateBook(updateId, newTitle, newAuthor);
+                    break;
+
+                case 8:
+                    System.out.println("Exiting...");
+                    return;    
             }
         }
     }
-    }
+}
 
