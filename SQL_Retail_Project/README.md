@@ -38,7 +38,7 @@ This project analyzes retail sales data using SQL queries and relational databas
 ## Project Structure
 
 - retail.sql → Contains all SQL queries
-- Images → Sample outputs of queries
+- screenshots → Sample outputs of queries
 
 ## Sample Output
 
@@ -46,24 +46,24 @@ This project analyzes retail sales data using SQL queries and relational databas
 ![Tables](screenshots/tables.png)
 
 ### Sample Data
-![Customers](images/customers.png)
+![Customers](screenshots/customers.png)
 
 ---
 
 ### Top Selling Products
-![Top Selling](images/top_selling.png)
+![Top Selling](screenshots/top_selling.png)
 
 ### Most Valuable Customers
-![Customers](images/valuable_customers.png)
+![Customers](screenshots/valuable_customers.png)
 
 ### Monthly Revenue
-![Revenue](images/monthly_revenue.png)
+![Revenue](screenshots/monthly_revenue.png)
 
 ### Category-wise Sales
-![Category](images/category_sales.png)
+![Category](screenshots/category_sales.png)
 
 ### Inactive Customers
-![Inactive](images/inactive_customers.png)
+![Inactive](screenshots/inactive_customers.png)
 
 ## Author
 Monica H
