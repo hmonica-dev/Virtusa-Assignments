@@ -21,6 +21,9 @@ To automate library operations using Java and OOP concepts..
 * Issue books
 * Return books
 * Fine calculation for late returns
+* Remove book
+* Update book
+* Exit
 
 ---
 
