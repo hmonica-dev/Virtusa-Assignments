@@ -66,6 +66,12 @@ java Main
 ### Search Book
 ![Search Book](screenshots/search_book.png)
 
+### Remove Book
+![Remove Book](screenshots/remove_book.png)
+
+### Update Book
+![Update Book](screenshots/update_book.png)
+
 ##  Author
 
 Monica H
