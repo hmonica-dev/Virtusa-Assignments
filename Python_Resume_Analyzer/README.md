@@ -20,7 +20,19 @@ The main goal of this project is to help freshers understand what skills they ne
 ## Technologies Used
 - Python
 - spaCy (for basic NLP)
-- pdfminer (for reading PDF) 
+- pdfminer (for reading PDF)
+- File Handling – To read job description files
+- Data Structures (Lists, Sets) – For storing and comparing skills
+
+---
+
+## Files & Modules
+- main.py – Controls the overall flow of the program
+- resume_parser.py – Extracts text from PDF resumes
+- skill_extractor.py – Identifies skills from text
+- job_matcher.py – Compares skills and calculates score
+- utils.py – Reads job description file
+- sample_data/ – Contains sample resume and job files
 
 ---
 
